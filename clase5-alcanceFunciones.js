@@ -31,5 +31,9 @@ imprimirNombreEnMayusculas({ nombre: 'jajsa'})
 saludo(ejemplo1);
 
 function cumpleanos(persona) {
-    persona.edad += 1
+    return {
+        ...persona,
+        edad: persona.edad + 1
+    }
+    
 }
